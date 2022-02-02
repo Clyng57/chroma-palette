@@ -3,6 +3,8 @@
 
 A light-weight utility for coloring your terminal. 0 dependencies. Default is a preselected color output from the 256 color palette, chosen to enhance legibility.
 
+<br />
+<br />
 
 # Table of Contents
 1. [ Install ](#install) <br />
