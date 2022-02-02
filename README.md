@@ -10,7 +10,8 @@ A light-weight utility for coloring your terminal. 0 dependencies. Default is a 
 1. [ Install ](#install) <br />
 2. [ Usage ](#examples) <br />
 
-
+<br />
+<br />
 
 <a name="install"></a>
 ## Install
@@ -19,9 +20,14 @@ A light-weight utility for coloring your terminal. 0 dependencies. Default is a 
 npm i chroma-palette 
 ```
 
+<br />
+<br />
+
 <a name="examples"></a>
 ## Usage
 
+<br />
+<br />
 
 ### Default (256-Color Set):
 
@@ -44,6 +50,8 @@ console.log(
 );
 ```
 
+<br />
+<br />
 
 ### 16-Color Set Support:
 
@@ -60,6 +68,8 @@ console.log(
 );
 ```
 
+<br />
+<br />
 
 ### Custom-Color Set Support:
 
@@ -76,6 +86,8 @@ console.log(
 );
 ```
 
+<br />
+<br />
 
 ### View the 256 Color Palette: 
 
