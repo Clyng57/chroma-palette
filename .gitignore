@@ -79,3 +79,5 @@ typings/
 .DS_Store
 
 examples/.DS_Store
+
+.gitattributes
