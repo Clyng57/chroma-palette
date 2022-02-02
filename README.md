@@ -4,22 +4,24 @@
 A light-weight utility for coloring your terminal. 0 dependencies. Default is a preselected color output from the 256 color palette, chosen to enhance legibility.
 
 
-## Table of Contents
+# Table of Contents
 1. [ Install ](#install) <br />
 2. [ Usage ](#examples) <br />
 
 
+
 <a name="install"></a>
-### Install
+## Install
 
 ```console
 npm i chroma-palette 
 ```
 
 <a name="examples"></a>
-### Usage
+## Usage
 
-Default (256-Color Set):
+
+### Default (256-Color Set):
 
 Default is a preselected color output from the 256 color palette, chosen to enhance legibility.
 
@@ -40,7 +42,8 @@ console.log(
 );
 ```
 
-16-Color Set Support:
+
+### 16-Color Set Support:
 
 If you need to alter the output of the colors to support the 16-color set.
 
@@ -55,7 +58,8 @@ console.log(
 );
 ```
 
-Custom-Color Set Support:
+
+### Custom-Color Set Support:
 
 If you want to change the output of various colors. 
 
@@ -70,7 +74,8 @@ console.log(
 );
 ```
 
-View the 256 Color Palette: 
+
+### View the 256 Color Palette: 
 
 Helpful when choosing custom colors.
 
