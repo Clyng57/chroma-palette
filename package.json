@@ -1,7 +1,9 @@
 {
   "name": "chroma-palette",
-  "version": "1.0.4",
+  "version": "1.0.11",
   "description": "A light-weight utility for coloring your terminal. 0 dependencies. Default is a preselected color output from the 256 color palette, chosen to enhance legibility.",
+  "author": "Cal Young",
+  "license": "MIT",
   "keywords": [
     "console",
     "color",
@@ -19,12 +21,21 @@
     "javascript",
     "node"
   ],
-  "author": "Cal Young",
-  "license": "MIT",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "examples/paint256.js",
+    "examples/test.js"
+  ],
+  "engines": {
+    "node": ">=14.13.0"
+  },
   "lib": [
     "es2016"
   ],
+  "devDependencies": {
+  },
   "dependencies": {
   }
 }

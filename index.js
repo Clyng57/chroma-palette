@@ -224,8 +224,10 @@ class Chroma {
   
 }
 
-let ChromaPalette = Chroma;
-ChromaPalette = new ChromaPalette();
+let chroma = new Chroma();
 
-module.exports = ChromaPalette;
-module.exports.Chroma = Chroma;
+chroma.Chroma = Chroma;
+chroma.chroma = chroma;
+chroma.default = chroma;
+
+module.exports = chroma;
