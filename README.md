@@ -3,7 +3,16 @@
 
 A light-weight utility for coloring your terminal. 0 dependencies. Default is a preselected color output from the 256 color palette, chosen to enhance legibility.
 
-<br />
+
+## Features:
+
+- Chainable using the [`push()`](#methods) method without having to call chromaPalette more than once.
+- 0 dependencies.
+- Has internal [function](#256) to print all 256 color options.
+- Fully customizable.
+- Has internal properties to provide easier formatting.
+- Has examples. Run `node <path to node_modules>/chroma-palette/examples/<example>`
+
 <br />
 
 # Table of Contents
@@ -12,7 +21,6 @@ A light-weight utility for coloring your terminal. 0 dependencies. Default is a 
 2. [ Properties ](#props) <br />
 2. [ Methods ](#methods) <br />
 
-<br />
 <br />
 
 <a name="install"></a>
@@ -23,12 +31,10 @@ npm i chroma-palette
 ```
 
 <br />
-<br />
 
 <a name="examples"></a>
 ## Usage
 
-<br />
 
 ### Default (256-Color Set):
 
@@ -58,7 +64,6 @@ console.log(
 );
 ```
 
-<br />
 
 ### 16-Color Set Support:
 
@@ -76,7 +81,6 @@ console.log(
 );
 ```
 
-<br />
 
 ### Custom-Color Set Support:
 
@@ -94,8 +98,8 @@ console.log(
 );
 ```
 
-<br />
 
+<a name="256"></a>
 ### View the 256 Color Palette: 
 
 Helpful when choosing custom colors.
@@ -111,19 +115,16 @@ console.log(
 ```
 
 <br />
-<br />
 
 <a name="props"></a>
 ## Properties
 
-<br />
 
 ### Formatters:
 
 - `space` - Will output a space after calling paint().
 - `enter` - Will output a return character after calling paint().
 
-<br />
 
 ### Modifiers:
 
@@ -134,7 +135,6 @@ console.log(
 - `hidden` - Hides text.
 - `bold` - Bold text.
 
-<br />
 
 ### Color:
 
@@ -160,12 +160,10 @@ console.log(
 - `blackBg` - Black background.
 
 <br />
-<br />
 
 <a name="methods"></a>
 ## Methods
 
-<br />
 
 ### Functions:
 
