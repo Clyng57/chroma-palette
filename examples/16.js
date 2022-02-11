@@ -1,5 +1,6 @@
 
-const chromaPalette = require('../index')
+const { ChromaPalette } = require('../index')
+const chromaPalette = new ChromaPalette({ profile:'16' })
 
 console.log(
   chromaPalette

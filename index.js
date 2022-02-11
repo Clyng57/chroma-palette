@@ -4,12 +4,12 @@
  */
 
 /**
- * Class Chroma - creates a tool for implementing color and formatting in strings.
+ * Class ChromaPalette - creates a tool for implementing color and formatting in strings.
  */
 
-class Chroma {
+class ChromaPalette {
   /**
-   * Create a Chroma
+   * Create a ChromaPalette
    * 
    * @param {Object | undefined} color - contains color options
    * @param {string | undefined} color.profile
@@ -149,6 +149,18 @@ class Chroma {
       ? `\x1b[48;5;${color.white}m`
       : "\x1b[47m";
   }
+  
+  /** Adds a space to elements */
+  get space() {
+    this.elements += ' '; 
+    return this;
+  }
+  /** Adds \n to elements */
+  get enter() {
+    this.elements += '\n'; 
+    return this;
+  }
+
   /** @returns this - after adding dim to elements */
   get dim() {
     this.elements += this.Dim; 
@@ -292,9 +304,18 @@ class Chroma {
     return this;
   }
   /** 
-   * Execute output of painting content
+   * Push content to elements and reset attributes
    * @param {* | undefined} content - user content to add
-   * @returns {string} returnContent - adding in the user contents to string and reset the elements in order to clear the Chroma.
+   * @returns {this}
+   */
+  push(content) {
+    this.elements = `${this.elements}${content !== undefined ? content : ''}${this.Reset}`;
+    return this;
+  }
+  /** 
+   * Execute output of painting elements and reset
+   * @param {* | undefined} content - user content to add
+   * @returns {string}
    */
   paint(content) {
     let returnContent = `${this.elements}${content !== undefined ? content : ''}${this.Reset}`;
@@ -305,12 +326,12 @@ class Chroma {
 }
 
 /**
- * @type {Chroma}
+ * @type {ChromaPalette}
  */
-let chroma = new Chroma();
+var chromaPalette = new ChromaPalette();
 
-chroma.Chroma = Chroma;
-chroma.chroma = chroma;
-chroma.default = chroma;
+chromaPalette.ChromaPalette = ChromaPalette;
+chromaPalette.chromaPalette = chromaPalette;
+chromaPalette.default = chromaPalette;
 
-module.exports = chroma;
+module.exports = chromaPalette;
