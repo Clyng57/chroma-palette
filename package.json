@@ -1,6 +1,6 @@
 {
   "name": "chroma-palette",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A light-weight utility for coloring your terminal. 0 dependencies. Default is a preselected color output from the 256 color palette, chosen to enhance legibility.",
   "author": "Cal Young",
   "license": "MIT",

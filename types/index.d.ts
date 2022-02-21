@@ -135,8 +135,5 @@ declare class ChromaPalette {
 }
 
 declare var chromaPalette: ChromaPalette;
-declare chromaPalette.ChromaPalette = ChromaPalette;
-declare chromaPalette.chromaPalette = chromaPalette;
-declare chromaPalette.default = chromaPalette;
 
 export = chromaPalette;
